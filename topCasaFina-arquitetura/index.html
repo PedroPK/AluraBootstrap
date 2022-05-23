@@ -13,12 +13,25 @@
 		<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	</head>
 	<body>
-		<h2>Sobre nós</h2>
+		<div class="container">
+			<h2>Sobre nós</h2>
 
-		<!--
-			Bootstrap Class img-responsive
-			The image should adapt to window/screen width
-		-->
-		<img class="img-responsive" src="assets/img/empresa.jpg">
+			<!--
+				Bootstrap Class img-responsive
+				The image should adapt to window/screen width
+			-->
+			<img class="img-responsive" src="assets/img/empresa.jpg">
+
+			<h3 data-toggle="collapse" data-target="#primeiro-paragrafo">Desde 1935</h3>
+			<p id="primeiro-paragrafo" class="collapse in">Estamos no mercado desde...</p>
+
+			<h3 data-toggle="collapse" data-target="#segundo-paragrafo">Desde 1935</h3>
+			<p id="segundo-paragrafo" class="collapse">Estamos no mercado desde...</p>
+
+			<h3 data-toggle="collapse" data-target="#terceiro-paragrafo">Desde 1935</h3>
+			<p id="terceiro-paragrafo" class="collapse">Estamos no mercado desde...</p>
+		</div>
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../topCasaFina-arquitetura/assets/bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>
