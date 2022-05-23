@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../topCasaFina-arquitetura/assets/css/style.css">
 	</head>
 	<body>
 		<div class="container">
@@ -22,14 +23,49 @@
 			-->
 			<img class="img-responsive" src="assets/img/empresa.jpg">
 
-			<h3 data-toggle="collapse" data-target="#primeiro-paragrafo">Desde 1935</h3>
-			<p id="primeiro-paragrafo" class="collapse in">Estamos no mercado desde...</p>
+			<div id="super-panel" class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" 
+							data-toggle="collapse" 
+							data-target="#primeiro-paragrafo"
+							data-parent="#super-panel">Desde 1935</h3>
+					</div>
+					<div id="primeiro-paragrafo" class="collapse in">
+						<div class="panel-body">
+							<p>Estamos no mercado desde...</p>
+						</div>
+					</div>
+				</div>
 
-			<h3 data-toggle="collapse" data-target="#segundo-paragrafo">Desde 1935</h3>
-			<p id="segundo-paragrafo" class="collapse">Estamos no mercado desde...</p>
-
-			<h3 data-toggle="collapse" data-target="#terceiro-paragrafo">Desde 1935</h3>
-			<p id="terceiro-paragrafo" class="collapse">Estamos no mercado desde...</p>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" 
+							data-toggle="collapse" 
+							data-target="#segundo-paragrafo"
+							data-parent="#super-panel">Preços acessíveis</h3>
+					</div>
+					<div id="segundo-paragrafo" class="collapse">
+						<div class="panel-body">
+							<p>A partir de R$ 1.000,00</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" 
+							data-toggle="collapse" 
+							data-target="#terceiro-paragrafo"
+							data-parent="#super-panel">Tornando o mundo mais bonito</h3>
+					</div>
+					<div id="terceiro-paragrafo" class="collapse">
+						<div class="panel-body">
+							<p>Trazendo alegria e harmonia para a vida de nossos clientes</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="../topCasaFina-arquitetura/assets/bootstrap/js/bootstrap.min.js"></script>
