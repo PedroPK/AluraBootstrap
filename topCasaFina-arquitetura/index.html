@@ -223,11 +223,48 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label></label>
-					<input>
+					<div class="grupo-radio-tipo-pessoa">
+						<div class="radio">
+							<label>
+								<input type="radio" name="tipo-pessoa" id="pessoaFisica" value="pessoaFisica" checked>
+								Pessoa Física
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="tipo-pessoa" id="pessoaJuridica" value="pessoaJuridica">
+								Pessoa Juridica
+							</label>
+						</div>
+					</div><!-- 
+						Empty - Do not remove it, it solves a HTML bug
+					--><div class="select-tipo-situacao">
+						<select class="form-control">
+							<option disabled selected>--Tipo de Situação--</option>
+							<option>Casa</option>
+							<option>Apartamento</option>
+							<option>Mansão</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary">Enviar</button>
 				</div>
 			</form>
 		</section>
+
+		<!-- Endereço -->
+		<footer>
+			<address>
+				<strong>TopCasaFina Arquitetura</strong><br>
+				Rua Vergueiro, 3185, Vila Mariana<br>
+				São Paulo, SP<br>
+				Tel: (11) 5571-2751 ou 5083-3884<br>
+			</address>
+			<address>
+				e-Mail: contato@topcasafina.com.br
+			</address>
+		</footer>
 
 		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="../topCasaFina-arquitetura/assets/bootstrap/js/bootstrap.min.js"></script>
