@@ -1,6 +1,3 @@
-#super-panel {
-	margin-top: 20px;
-}
 
 html, body {
 	height: 100%;
@@ -29,6 +26,19 @@ header h1 {
 	left: 50%;
 	transform: translate(-50%);
 	transition: 1s;
+}
+
+#super-panel {
+	margin-top: 20px;
+}
+@media(min-width: 768px) {
+	.tag-responsiva {
+		width: 50%;
+		float: left;
+	}
+	#super-panel {
+		margin-top: 0;
+	}
 }
 
 .titulo-depoimentos {

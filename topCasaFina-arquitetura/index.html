@@ -7,6 +7,12 @@
 			View Port meta to setup how Users are going to see our screen
 			width=device-width		=	the content should scale to device width
 			initial-scale=1			=	the initial zoom should fit the first loaded page in browser.
+
+			Course URL
+			https://cursos.alura.com.br/course/bootstrap-criacao-single-page-responsiva
+			
+			Course Source-code
+			https://github.com/alura-cursos/bootstrap-boas-praticas-no-front-end/
 		-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,29 +21,27 @@
 	</head>
 	<body>
 		<header>
-
 			<nav class="navbar navbar-default">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="navbar-header">
-						
-							<!-- Hamburguer Menu Button-->
-							<button type="button" 
-							class="navbar-toggle collapsed" 
-							data-toggle="collapse"
-							data-target="#links-sections"
-							aria-expanded="false">
+						<!-- Hamburguer Menu Button-->
+						<button type="button" 
+								class="navbar-toggle collapsed" 
+								data-toggle="collapse"
+								data-target="#links-sections"
+								aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">TopCasaFina Arquitatura</a>
+						<a class="navbar-brand" href="#">TopCasaFina Arquitatura</a><br>
 					</div>
 					
 					<div 	id="links-sections"
-					class="collapse navbar-collapse">
+							class="collapse navbar-collapse">
 					
-						<ul class="nav navbar">
+						<ul class="nav navbar-nav">
 							<li><a href="#sobre-nos">Sobre nós</a></li>
 							<li><a href="#nossos-projetos">Nossos Projetos</a></li>
 							<li><a href="#depoimentos">Depoimentos</a></li>
@@ -62,47 +66,49 @@
 				Bootstrap Class img-responsive
 				The image should adapt to window/screen width
 			-->
-			<img class="img-responsive" src="assets/img/empresa.jpg" alt="Imagem de um homem e uma mulher trabalhando frente a frente em um espaço moderno e isolado em um escritório">
-
-			<div id="super-panel" class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title" 
+			<div class="row">
+				<img class="img-responsive col-sm-6" src="assets/img/empresa.jpg" alt="Imagem de um homem e uma mulher trabalhando frente a frente em um espaço moderno e isolado em um escritório">
+				
+				<div id="super-panel" class="panel-group col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title" 
 							data-toggle="collapse" 
 							data-target="#primeiro-paragrafo"
 							data-parent="#super-panel">Desde 1935</h3>
-					</div>
-					<div id="primeiro-paragrafo" class="collapse in">
-						<div class="panel-body">
-							<p>Estamos no mercado desde...</p>
+						</div>
+						<div id="primeiro-paragrafo" class="collapse in">
+							<div class="panel-body">
+								<p>Estamos no mercado desde...</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title" 
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title" 
 							data-toggle="collapse" 
 							data-target="#segundo-paragrafo"
 							data-parent="#super-panel">Preços acessíveis</h3>
-					</div>
-					<div id="segundo-paragrafo" class="collapse">
-						<div class="panel-body">
-							<p>A partir de R$ 1.000,00</p>
+						</div>
+						<div id="segundo-paragrafo" class="collapse">
+							<div class="panel-body">
+								<p>A partir de R$ 1.000,00</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title" 
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title" 
 							data-toggle="collapse" 
 							data-target="#terceiro-paragrafo"
 							data-parent="#super-panel">Tornando o mundo mais bonito</h3>
-					</div>
-					<div id="terceiro-paragrafo" class="collapse">
-						<div class="panel-body">
-							<p>Trazendo alegria e harmonia para a vida de nossos clientes</p>
+						</div>
+						<div id="terceiro-paragrafo" class="collapse">
+							<div class="panel-body">
+								<p>Trazendo alegria e harmonia para a vida de nossos clientes</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -119,62 +125,74 @@
 		<section id="nossos-projetos" class="container">
 			<h2>Nossos Projetos</h2>
 
-			<figure class="thumbnail">
-				<img class="img-responsive" src="../topCasaFina-arquitetura/assets/img/projetos/casa-castelo.png" alt="Uma pequena casa-castelo, cercado por um fosso/vala de água">
-
-				<figcaption class="caption">
-					<h3>Casa Castelo</h3>
-					<p>A Casa Castelo é o lançamento mais recente da TopCasaFina Arquitetura, feita para quem gosta de meditação e história arquitetônica.</p>
-				</figcaption>			
-			</figure>
-
-			<figure class="thumbnail">
-				<img	class="img-responsive" 
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail">
+						<img class="img-responsive" src="../topCasaFina-arquitetura/assets/img/projetos/casa-castelo.png" alt="Uma pequena casa-castelo, cercado por um fosso/vala de água">
+						
+						<figcaption class="caption">
+							<h3>Casa Castelo</h3>
+							<p>A Casa Castelo é o lançamento mais recente da TopCasaFina Arquitetura, feita para quem gosta de meditação e história arquitetônica.</p>
+						</figcaption>			
+					</figure>
+				</div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail">
+						<img	class="img-responsive" 
 						src="../topCasaFina-arquitetura/assets/img/projetos/casa-lago.png" 
 						alt="Um grande lago, com uma casa de 2 andares à direita, ao pé de uma montanha, com céu nublado">
-
-				<figcaption class="caption">
-					<h3>Casa Lago</h3>
-					<p>A Casa do Lago foi lar de inúmeras pessoas que frequentavam o palácio presidencial da Noruega.</p>
-				</figcaption>			
-			</figure>
-
-			<figure class="thumbnail">
-				<img	class="img-responsive" 
+						
+						<figcaption class="caption">
+							<h3>Casa Lago</h3>
+							<p>A Casa do Lago foi o lar de inúmeras pessoas que frequentavam o palácio presidencial da Noruega nos bailes do século XIX.</p>
+						</div>
+					</figcaption>			
+				</figure>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail">
+						<img	class="img-responsive" 
 						src="../topCasaFina-arquitetura/assets/img/projetos/mercado-marapira.png" 
 						alt="Uma edificação de 6 andares, com pilotis no térreo, e visual disruptivo a oeste, com inclinações que aparentam o derretimento do concreto">
-
-				<figcaption class="caption">
-					<h3>Mercado Marapira</h3>
-					<p>O Mercado Marapita foi projetato no mínimos detalhes em uma arquitetura baseada em frutas moles.</p>
-				</figcaption>			
-			</figure>
-
-			<figure class="thumbnail">
-				<img	class="img-responsive" 
+						
+						<figcaption class="caption">
+							<h3>Mercado Marapira</h3>
+							<p>O Mercado Marapita foi projetato no mínimos detalhes em uma arquitetura baseada em frutas moles.</p>
+						</div>
+					</figcaption>			
+				</figure>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail">
+						<img	class="img-responsive" 
 						src="../topCasaFina-arquitetura/assets/img/projetos/palacio-dionisio.png" 
 						alt="Um palácio de vidro, semelhante a uma grande estufa ou jardim botânico">
-
-				<figcaption class="caption">
-					<h3>Palácio Dionísio</h3>
-					<p>O Palácio Dionísio foi eleito pela revista Jardinagem Arquitetada como sendo o palácio mais bonito do mundo.</p>
-				</figcaption>			
-			</figure>
-
-			<figure class="thumbnail">
-				<img	class="img-responsive" 
+						
+						<figcaption class="caption">
+							<h3>Palácio Dionísio</h3>
+							<p>O Palácio Dionísio foi eleito pela revista Jardinagem Arquitetada como sendo o palácio mais bonito do mundo.</p>
+						</div>
+					</figcaption>			
+				</figure>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail">
+						<img	class="img-responsive" 
 						src="../topCasaFina-arquitetura/assets/img/projetos/residencia-ludi.png" 
 						alt="Uma pequena casa no topo de uma montanha, muito bem decorada com flores em grandes vasos feitos de troncos de madeira">
-
-				<figcaption class="caption">
-					<h3>Residência Ludi</h3>
-					<p>A Residência Ludi foi projetada para ser aquecida pelo Sol e por uma Lareira e registir à neve que cai levemente nos Invernos da Suíça.</p>
-				</figcaption>			
-			</figure>
+						
+						<figcaption class="caption">
+							<h3>Residência Ludi</h3>
+							<p>A Residência Ludi foi projetada para ser aquecida pelo Sol e por uma Lareira e registir à neve que cai levemente nos Invernos da Suíça.</p>
+						</div>
+					</figcaption>			
+				</figure>
+			</div>
 		</section>
-
+			
 		<section id="depoimentos" class="container">
-			<h2 class="container titulo-depoimentos">Depoimentos</h2>
+			<h2 class="titulo-depoimentos">Depoimentos</h2>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -225,11 +243,13 @@
 			  </div>
 		</section>
 
-		<!-- Video Institucional -->
-		<section id="institucional" class="container">
-			<h2>Institucional</h2>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe		class="embed-responsive-item"
+		<div class="container">
+			<div class="row">
+				<!-- Video Institucional -->
+				<section id="institucional" class="col-sm-6">
+					<h2>Institucional</h2>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe		class="embed-responsive-item"
 							width="560" 
 							height="315" 
 							src="https://www.youtube.com/embed/i_3Pv1AygeI" 
@@ -237,62 +257,64 @@
 							frameborder="0" 
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 							allowfullscreen>
-				</iframe>
-			</div>
-		</section>
-
-		<!-- Contato -->
-		<section id="contato" class="container">
-			<h2>Contato</h2>
-			<p>Entre em contato conosco</p>
-			<form>
-				<div class="form-group">
-					<label for="contato-nome">Nome</label>
-					<input 	type="text" 
+						</iframe>
+					</div>
+				</section>
+				
+				<!-- Contato -->
+				<section id="contato" class="col-sm-6">
+					<h2>Contato</h2>
+					<p>Entre em contato conosco</p>
+					<form>
+						<div class="form-group">
+							<label for="contato-nome">Nome</label>
+							<input 	type="text" 
 							id="contato-nome" 
 							placeholder="Seu nome completo"
 							class="form-control">
-				</div>
-				<div class="form-group">
-					<label for="contato-email">e-Mail</label>
-					<div class="input-group">
-						<div class="input-group-addon">@</div>
-						<input	type="email"
+						</div>
+						<div class="form-group">
+							<label for="contato-email">e-Mail</label>
+							<div class="input-group">
+								<div class="input-group-addon">@</div>
+								<input	type="email"
 								id="contato-email"
 								placeholder="seunome@email.com"
 								class="form-control">
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="grupo-radio-tipo-pessoa">
-						<div class="radio">
-							<label>
-								<input type="radio" name="tipo-pessoa" id="pessoaFisica" value="pessoaFisica" checked>
-								Pessoa Física
-							</label>
+							</div>
 						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="tipo-pessoa" id="pessoaJuridica" value="pessoaJuridica">
-								Pessoa Juridica
-							</label>
+						<div class="form-group">
+							<div class="grupo-radio-tipo-pessoa">
+								<div class="radio">
+									<label>
+										<input type="radio" name="tipo-pessoa" id="pessoaFisica" value="pessoaFisica" checked>
+										Pessoa Física
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="tipo-pessoa" id="pessoaJuridica" value="pessoaJuridica">
+										Pessoa Juridica
+									</label>
+								</div>
+							</div><!-- 
+								Empty - Do not remove it, it solves a HTML bug
+							--><div class="select-tipo-situacao">
+								<select class="form-control">
+									<option disabled selected>--Tipo de Situação--</option>
+									<option>Casa</option>
+									<option>Apartamento</option>
+									<option>Mansão</option>
+								</select>
+							</div>
 						</div>
-					</div><!-- 
-						Empty - Do not remove it, it solves a HTML bug
-					--><div class="select-tipo-situacao">
-						<select class="form-control">
-							<option disabled selected>--Tipo de Situação--</option>
-							<option>Casa</option>
-							<option>Apartamento</option>
-							<option>Mansão</option>
-						</select>
-					</div>
-				</div>
-				<div class="form-group">
-					<button class="btn btn-primary">Enviar</button>
-				</div>
-			</form>
-		</section>
+						<div class="form-group">
+							<button class="btn btn-primary">Enviar</button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
 
 		<!-- Endereço -->
 		<footer>
